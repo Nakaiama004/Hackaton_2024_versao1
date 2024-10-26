@@ -1,0 +1,269 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fbfc;
+    color: #1E2338;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 20px;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand img {
+    width: 30px;
+    height: 24px;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #1E2338;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+
+.principall {
+    display: flex; 
+    width: 100%;/* Usa flexbox para o layout */
+    height: 300px;
+    justify-content: center;
+    align-items: center; /* Altura total */
+    background: var(--Azul-padro, #10769B);
+    border-radius: 11px;
+    margin-top: 10%;
+}
+
+.um {
+    width: 30%; /* Largura da div de imagem */
+    background-color: #e9ecef; /* Cor de fundo para visualização */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    height: 100%; /* Para garantir que ocupe toda a altura da div principal */
+}
+
+.imagem {
+    width: 100%; /* Faz a imagem ocupar toda a largura da div */
+    height: 100%; /* Faz a imagem ocupar toda a altura da div */
+    border-radius: 11px; /* Mantém as bordas arredondadas */
+    object-fit: cover; /* Faz a imagem ocupar o espaço disponível sem distorção */
+}
+
+
+
+
+.dois {
+    width: 70%; /* Largura da div de texto */
+    background-color: #f8f9fa; /* Cor de fundo para visualização */
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem; /* Coloca os elementos em coluna */
+}
+
+.tres {
+    height: 10%; /* Altura da sub-div */
+    background-color: #ffc107; /* Cor de fundo para visualização */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.carousel-control-prev {
+    background-color: red;
+}
+
+.carousel-control-next {
+    background-color: red;
+}
+
+.titulo{
+    font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 34px;
+
+color: #FFFFFF;
+}
+
+.primeirotexto{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+
+.segundotexto{  
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+}
+
+#home{
+    /* Home (selecionado) */
+position: absolute;
+width: 34px;
+height: 15px;
+left: 58px;
+top: 15px;
+
+font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+}
+
+#other, #other1, #other2{
+    /* Sobre */
+
+font-family: 'Cinzel';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+}
+
+#other{
+
+position: absolute;
+width: 37px;
+height: 15px;
+left: 103px;
+top: 15px;
+
+}
+
+#other1{
+position: absolute;
+width: 41px;
+height: 15px;
+left: 151px;
+top: 15px;
+
+}
+
+#other2{
+position: absolute;
+width: 47px;
+height: 15px;
+left: 203px;
+top: 15px;
+
+font-family: 'Cinzel';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+
+
+}
+
+.logo{
+position: absolute;
+width: 46px;
+height: 45px;
+left: 3px;
+top: 0px;
+}
+
+#wpp{
+position: absolute;
+left: 89.83%;
+right: 9.08%;
+top: 0.88%;
+bottom: 98.23%;
+
+}
+
+#icone {
+    width: 10vw;      /* Largura do ícone em unidades de viewport */
+    height: 10vw;     /* Altura do ícone em unidades de viewport */
+    position: fixed;  /* Fixa o ícone na tela */
+    top: 2%;          /* Distância do topo em porcentagem */
+    left: 90%;        /* Posição inicial à direita */
+    transform: translate(-50%, 0); /* Centraliza o ícone */
+}
+
+/* Media query para ajustar em telas menores */
+@media (max-width: 768px) {
+    #icone {
+        width: 15vw;  /* Ajusta a largura em telas menores */
+        height: 15vw; /* Ajusta a altura em telas menores */
+        left: 85%;    /* Ajusta a posição */
+    }
+}
+
